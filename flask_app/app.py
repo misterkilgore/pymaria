@@ -21,7 +21,7 @@ def index():
     cursor.close()
     conn.close()
     return render_template_string("""
-        <h1>Databases disponibili:</h1>
+        <h1>Databases BOOM MariaDB:</h1>
         <ul>
         {% for db in databases %}
           <li>{{ db }}</li>
