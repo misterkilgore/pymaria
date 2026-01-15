@@ -1,4 +1,3 @@
-```markdown
 # pymaria
 
 **Tutorial semplice di Flask + MariaDB con Docker**
@@ -56,8 +55,8 @@ Assicurati di avere installato sul tuo computer:
 pymaria/
 ├── app/
 │   ├── app.py           # Applicazione Flask principale
-│   ├── requirements.txt # Dipendenze Python
 │   └── ...
+├── requirements.txt     # Dipendenze Python
 ├── docker-compose.yml   # Configurazione Docker Compose
 ├── Dockerfile           # Dockerfile per l’app Flask
 ├── init.sql             # Il file di definizione del DB
@@ -69,6 +68,7 @@ pymaria/
 ## Come funziona
 
 - L’**app Flask** gira in un container, gestendo le richieste HTTP.
+- Il server Flask prende i file dal tuo PC, quindi se aggiorni app.py
 - **MariaDB** gira in un container separato come database.
 - I container comunicano tramite una rete Docker definita in `docker-compose.yml`.
 - Le variabili d’ambiente configurano in modo sicuro i dettagli di connessione al database.
@@ -102,6 +102,6 @@ Questo progetto è open source sotto licenza MIT.
 ## Ringraziamenti
 
 Grazie per aver esplorato Flask + MariaDB containerizzati con `pymaria`. Che il tuo percorso di apprendimento sia fluido e i tuoi container leggeri! 🚀🌱
-```
+
 
 
