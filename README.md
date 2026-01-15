@@ -53,7 +53,7 @@ Assicurati di avere installato sul tuo computer:
 
 ```
 pymaria/
-├── app/
+├── flask_app/
 │   ├── app.py           # Applicazione Flask principale
 │   └── ...
 ├── requirements.txt     # Dipendenze Python
@@ -68,7 +68,7 @@ pymaria/
 ## Come funziona
 
 - L’**app Flask** gira in un container, gestendo le richieste HTTP.
-- Il server Flask prende i file dal tuo PC, quindi se aggiorni app.py
+- Il server Flask prende i file dal tuo PC, quindi se aggiorni la cartella flask_app, i cambiamenti si aggiornano in tempo reale
 - **MariaDB** gira in un container separato come database.
 - I container comunicano tramite una rete Docker definita in `docker-compose.yml`.
 - Le variabili d’ambiente configurano in modo sicuro i dettagli di connessione al database.
@@ -81,6 +81,7 @@ pymaria/
 - Usare Docker Compose per orchestrare applicazioni multi-container
 - Collegare applicazioni Flask a database MariaDB dentro Docker
 - Esplorare routing base di Flask e operazioni CRUD su database
+- Fornire un ambiente di sviluppo minimale per sperimentare applicazioni su Flask e MariaDB
 
 ---
 
